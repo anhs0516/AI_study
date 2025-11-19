@@ -73,6 +73,6 @@
 
   <img width="2791" height="1496" alt="image" src="https://github.com/user-attachments/assets/558e6880-82ec-4739-920b-22d104294e23" />
 
-
+<출처 : 밑바닥부터 만들면서 배우는 LLM 길벗, 2025>
 
 
