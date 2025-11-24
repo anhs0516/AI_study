@@ -35,3 +35,38 @@ powershell을 실행 후 "docker run -it python" 명령어를 통해 최신 pyth
 
 해결 메시지는 잘 보이지 않고 매번 지웠다 깔고 하는건 비효율적이라 생각되어 리눅스에 도커 설치해서 해보겠습니다..... 
 
+
+
+
+### 1. 칼리 리눅스 도커 다운로드
+
+우선 sudo apt update를 통해 업데이트 해줍니다
+
+이후 
+
+sudo apt install docker.io 로 도커 다운로드
+
+
+### 2. Python 최신 이미지 다운로드 및 실행
+```
+docker run -it python
+```
+
+도커에서 python 최신 이미지를 다운받고 바로 실행
+
+<img width="808" height="340" alt="image" src="https://github.com/user-attachments/assets/2b191989-19c1-4a00-8ed0-29595b48d48b" />
+
+<img width="376" height="47" alt="image" src="https://github.com/user-attachments/assets/63b261a4-fb08-4588-9c88-9d568468388f" />
+
+
+### 3. 이미 만들어놓은 컨테이너를 이용하여 Python 작업 이어나아가기
+
+내가 만들어놓은 컨테이너 ID를 파악
+
+<img width="1228" height="131" alt="image" src="https://github.com/user-attachments/assets/2db3e05f-8a0a-4028-938a-c2029286aaa8" />
+
+만들어놓은 컨테이너 ID를 이용하여 시작 후 코드 입력 가능한 상태로 만들기
+
+```
+docker start -ai <컨테이너 ID>
+```
