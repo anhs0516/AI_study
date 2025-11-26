@@ -70,3 +70,13 @@ docker run -it python
 ```
 docker start -ai <컨테이너 ID>
 ```
+위처럼만 하면 python 여러줄 입력불가
+
+```
+
+docker start <컨테이너 ID>
+로 컨테이너를 시작 후 
+
+docker exec -it <컨테이너 ID> /bin/bash
+
+```
