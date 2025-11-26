@@ -67,16 +67,25 @@ docker run -it python
 
 만들어놓은 컨테이너 ID를 이용하여 시작 후 코드 입력 가능한 상태로 만들기
 
+
+
+
+#### tip
+
 ```
 docker start -ai <컨테이너 ID>
 ```
-위처럼만 하면 python 여러줄 입력불가
+위처럼만 하면 pip등을 못함
+
 
 ```
-
 docker start <컨테이너 ID>
 로 컨테이너를 시작 후 
 
 docker exec -it <컨테이너 ID> /bin/bash
 
+이후
+python
+입력하면 파이썬 코딩 가능
 ```
+
